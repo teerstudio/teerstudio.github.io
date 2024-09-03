@@ -1,7 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      /* Remove the navbar's default margin-bottom and rounded borders */
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+
+      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+      .row.content {
+        /* height: 450px; */
+        min-height: 800px;
+      }
+
+      /* Set gray background color and 100% height */
+      .sidenav {
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        height: 100%;
+      }
+
+      /* Set black background color, white text and some padding */
+      footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+      }
+
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+        }
+        .row.content {
+          height: auto;
+        }
+      }
+    </style>
+  </head>
   <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Hello Test</a>
+        </div>
+        <!-- <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Input View</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#"
+                ><span class="glyphicon glyphicon-log-in"></span> Login</a
+              >
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+      <div class="row content">
+        <div class="col-sm-12 text-left">
+          <h1>Test Input View</h1>
+          <form action="">
+            <div class="form-group">
+              <label for="fname">Name :</label>
+              <input type="text" id="fname" name="fname" class="form-control" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email :</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="telll">Tel :</label>
+              <input type="tel" id="telll" name="telll" class="form-control" />
+            </div>
+
+            <div class="form-group">
+              <label for="amount">Amount :</label>
+              <input
+                type="number"
+                id="amount"
+                name="mount"
+                pattern="\d*"
+                inputmode="decimal"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="number">Number :</label>
+              <input
+                type="number"
+                id="number"
+                name="number"
+                pattern="\d*"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="date">Date :</label>
+              <input type="date" id="date" name="date" class="form-control" />
+            </div>
+
+            <div class="form-group">
+              <input type="submit" value="Submit" class="btn btn-default" />
+            </div>
+          </form>
+          <hr />
+          <h3>Test</h3>
+          <p>Lorem ipsum...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer class="container-fluid text-center">
+      <p>Footer Text</p>
+    </footer> -->
   </body>
 </html>
