@@ -14,10 +14,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
+      body {
+        background-color: #eaf5ff;
+        color: #17324d;
+      }
+
       /* Remove the navbar's default margin-bottom and rounded borders */
       .navbar {
         margin-bottom: 0;
         border-radius: 0;
+      }
+
+      .navbar-inverse {
+        background-color: #1976d2;
+        border-color: #1565c0;
+      }
+
+      .navbar-inverse .navbar-brand {
+        color: #fff;
       }
 
       /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -26,11 +40,24 @@
         min-height: 800px;
       }
 
-      /* Set gray background color and 100% height */
+      /* Set light blue background color and 100% height */
       .sidenav {
         padding-top: 20px;
-        background-color: #f1f1f1;
+        background-color: #eaf5ff;
         height: 100%;
+      }
+
+      .btn-default {
+        color: #fff;
+        background-color: #1976d2;
+        border-color: #1565c0;
+      }
+
+      .btn-default:hover,
+      .btn-default:focus {
+        color: #fff;
+        background-color: #1565c0;
+        border-color: #0d47a1;
       }
 
       /* Set black background color, white text and some padding */
